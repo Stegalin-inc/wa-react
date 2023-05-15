@@ -1,3 +1,16 @@
+:root {
+  --background-color: #efeae2;
+  --message-outcoming-color: #d9fdd3;
+  --message-incoming-color: #ffffff;
+  --bar-color: #f0f2f5;
+
+}
+
+#root, body, html {
+  width: 100%;
+  height: 100%;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',

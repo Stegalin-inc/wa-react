@@ -1,0 +1,13 @@
+.Auth {
+    display: flex;
+    flex-direction: column;
+    padding: 100px;
+    gap: 5px;
+    background-color: var(--background-color);
+    flex: 1;
+}
+
+.Auth button {
+    background-color: var(--message-outcoming-color);
+    border: 1px solid gray;
+}

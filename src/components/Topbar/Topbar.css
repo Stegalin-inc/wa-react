@@ -1,0 +1,7 @@
+.Topbar {
+    display: flex;
+    align-items: center;
+    height: 39px;
+    padding: 10px 16px;
+    background-color: var(--bar-color);
+}

@@ -1,0 +1,23 @@
+.ChatTextField {
+    background-color: var(--bar-color);
+    display: flex;
+    gap: 5px;
+    padding: 5px 16px;
+}
+
+.input-wrapper {
+    display: flex;
+    flex: 1;
+    border-radius: 7px;
+    background: white;
+    padding: 10px;
+}
+
+.input-wrapper input:focus-visible {
+    outline: none;
+}
+
+.input-wrapper input {
+    border: none;
+    width: 100%;
+}

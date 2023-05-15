@@ -1,23 +1,20 @@
-import logo from './logo.svg';
+import { useState } from 'react';
 import './App.css';
+import { Auth } from './components/Auth/Auth';
+import { ChatView } from './components/ChatView/ChatView';
+import { Api } from './util/Api';
 
 function App() {
+  const [isLogged, setIsLogged] = useState(false)
+
+  const onChooseCredentials = (waInstance, token) => {
+    Api.setCredentials(waInstance, token);
+    setIsLogged(true);
+  }
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {!isLogged? <Auth onChoose={onChooseCredentials}/>: <ChatView />}
     </div>
   );
 }
